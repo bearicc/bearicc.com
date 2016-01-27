@@ -1,0 +1,201 @@
+#content.container {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+.header {
+  margin: 15px auto;
+}
+article {
+  border: 1px solid #DBE0E4;
+  background: #F4F9FD;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+article h2.title {
+  font-size: 1.5em;
+  margin: 15px auto 10px;
+}
+article .subtitle {
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+article p {
+  margin: 15px auto;
+}
+article hr {
+  margin: 0;
+}
+article .subtitle .group1 a {
+  color: #3c763d;
+  border-right: 2px solid #333;
+  padding: 0 1ex;
+}
+article .subtitle .group1 a:last-child {
+  border: 0;
+  padding-right: 0;
+}
+article .subtitle .group2 span.comments-count {
+  color: red;
+}
+article p {
+  word-wrap: break-word;
+  text-align: justify;
+  font-size: 1em;
+}
+article span.date {
+  margin-left: 1ex;
+}
+#blog {
+  padding-right: 30px;
+}
+#aside {
+  padding-left: 30px;
+}
+#aside > .panel {
+  box-shadow: -8px 0 15px -8px rgba(0,0,0,.5);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+#latest-posts a {
+  padding: 0 5px;
+  text-decoration: none;
+}
+#category ul li,
+#archive ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+span.label {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* comments */
+#comment {
+  padding-top: 2em;
+  border-top: 1px solid #000;
+  margin: 30px 15px;
+}
+#comment .comment-header {
+  height: 40px;
+  border-bottom: 2px solid #eee;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgba(0,39,59,.5);
+}
+#comment .comment-header1 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgba(0,39,59,.5);
+  margin: 0;
+  padding: 5px 0;
+  font-size: 0.8em;
+}
+#comment .comment-header span, #comment .comment-header a, #comment .comment-header1 a {
+  text-decoration: none;
+  color: rgba(0,39,59,.5);
+  transition: color 1s;
+}
+#comment .comment-header .col-md-2,
+#comment .comment-header .col-md-10,
+#comment .comment-header1 .col-md-2,
+#comment .comment-header1 .col-md-10 {
+  padding: 0;
+}
+#comment .comment-header .col-md-10 span,
+#comment .comment-header .col-md-10 a,
+#comment .comment-header1 .col-md-10 a {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 700;
+  height: 40px;
+  position: relative;
+  bottom: 1px;
+}
+#comment .comment-header span.active,
+#comment .comment-header1 span.active {
+  color: #000;
+  border-bottom: 2px solid rgb(0, 0, 238);
+}
+#comment .comment-header a:hover,
+#comment .comment-header1 a:hover {
+  color: #000;
+}
+#comment img.title {
+  width: 60px;
+  height: 60px;
+}
+#comment ul.comment-item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin-bottom: 25px;
+}
+#comment ul.comment-item li:nth-child(1){
+  min-width: 60px;
+}
+#comment ul.comment-item li:nth-child(2){
+  flex-grow: 1;
+  padding-left: 15px;
+  text-align: justify;
+}
+#comment ul.comment-item p.header {
+  color: #777;
+  font-size: 0.8em;
+  margin: 0;
+}
+#comment ul.comment-item.active p.header span.name {
+  color: rgb(0,0,238);
+}
+#comment-new textarea {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: rgba(0,39,59,.2);
+  font-size: 1.2em;
+}
+#comment-new #upload-img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-color: rgba(0,39,59,.2);
+  border-top: none;
+  background-color: rgb(246, 248, 249);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+#comment-new .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+  width: 100%;
+}
+#comment-new .footer .form-inline .form-control {
+  font-size: 20px;
+  padding: 5px;
+  height: 40px;
+}
+#comment-new .footer input.btn.btn-success {
+  padding: 10px 20px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.alert span {
+  font-size: 1.5em;
+}
+.alert h1 {
+  font-size: 1.5em;
+  margin: 0;
+}

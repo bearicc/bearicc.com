@@ -1,0 +1,112 @@
+@media screen and (min-width: 768px) {
+    .navbar-brand,
+    .navbar-nav li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 0 15px;
+    }
+}
+footer .visitor-tracking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .visitor-tracking div:nth-child(1n+2) {
+    text-align: right;
+}
+/* ---------- left and right panel ---------- */
+.main-container {
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+    left: 0;
+    transition: left 0.7s;
+}
+#left-panel,
+#right-panel {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    background: transparent;
+    z-index: 1000;
+    font-size: 1.5em;
+}
+#left-panel {
+    left: -150px;
+    transition: left 0.7s;
+}
+#right-panel {
+    right: -150px;
+    transition: right 0.7s;
+}
+#left-panel-content,
+#right-panel-content {
+    position: absolute;
+    box-sizing: border-box;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    border: 1px solid black;
+    background-color: #47a3da;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+#left-panel-content { left: 0; }
+#right-panel-content { right: 0; }
+#left-panel:hover,
+#left-panel.hover {
+    left: 0;
+}
+#right-panel:hover {
+    right: 0;
+}
+#left-panel:hover ~ .main-container,
+#left-panel.hover ~ .main-container {
+    left: 150px;
+}
+/* ---------- info ---------- */
+#info {
+    margin-bottom: 15px;
+    width: 150px;
+}
+#info .me {
+    margin: 0 auto 15px;
+}
+#info h1, #info p {
+    text-align: center;
+    margin: 0;
+}
+#info h1 {
+    font-size: 1em;
+}
+.me {
+    position: relative;
+    background-image: url("../img/me.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+    border-radius: 50%;
+}
+.me-bg {
+    display: none;
+}
+.me:hover .me-bg {
+    display: block;
+    background-color: rgba(172,214,255,0.5);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#content {
+    position: relative;
+}

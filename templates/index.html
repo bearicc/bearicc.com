@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="css/index.css">
+{% endblock %}
+
+{% block body %}
+<div id="left-panel">
+    <div id="left-panel-content">
+        <div id="info">
+            <div class="me">
+                <div class="me-bg bg-primary"></div>
+            </div>
+            <h1>Hao Xiong</h1>
+            <p>UIUC</p>
+        </div>
+    </div>
+</div>
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<a class="punch">Hello, world !</a>
+{% endblock %}
+
+{% block footer %}
+<div class="container"><img id="footer-art" src="/static/img/default.png" alt=""></div>
+<div id="footer-grass" class="col-md-12"></div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">&copy; 2016 BEAR</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

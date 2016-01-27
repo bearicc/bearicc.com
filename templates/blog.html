@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="css/blog.css">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-9" id="blog">
+      <div class="row header">
+        <div class="col-md-12">Total Articles: {{ posts_filter_count }}</div>
+      </div>
+  <!-- ============================== blog ============================== -->
+      {% for post, category, comments_count in posts_filter %}
+      <article>
+        <h2 class="title"><a href="/blog/{{post.published_date.year}}/{{post.published_date.month}}/{{post.published_date.day}}/{{post.title|urlencode}}">{{ post.title }}</a></h2>
+        <div class="row subtitle">
+          <div class="group1 col-md-4">
+            <i class="fa fa-tags"></i>{% for c in category %}<a href="/blog/category/{{c}}">{{c}}</a>{% endfor %}
+          </div>
+          <div class="group2 col-md-8 text-right">
+            <i class="fa fa-comment"></i>&nbsp;<a href="/blog/{{post.published_date.year}}/{{post.published_date.month}}/{{post.published_date.day}}/{{post.title|urlencode}}#comment">{% if comments_count > 1 %}Comments{% else %}Comment{% endif %}&nbsp;({{ comments_count }})</a>
+            <i class="fa fa-clock-o"></i><span class="date">{{ post.published_date }}</span> by <a href="/about/{{post.author}}">{{ post.author }}</a>
+          </div>
+        </div>
+        <hr>
+        <p class="lead">{{ post.text|safe }}</p>
+        <a href="/blog/{{post.published_date.year}}/{{post.published_date.month}}/{{post.published_date.day}}/{{post.title|urlencode}}"><i class="fa fa-book"></i> read the full article ...</a>
+      </article>
+      {% endfor %}
+  <!-- ============================== siderbar ============================== -->
+    </div>
+    <div class="col-md-3" id="aside">
+      <div class="panel panel-default" id="latest-posts">
+        <div class="panel-heading">
+          <h4 class="panel-title">Latest Posts</h4>
+        </div>
+        <ul class="list-group">
+        {% for post, c in posts %}
+        <li class="list-group-item"><a href="/blog/{{post.published_date.year}}/{{post.published_date.month}}/{{post.published_date.day}}/{{post.title|urlencode}}">{{ post.title }}</a>
+            {% for c1 in c%}<a href="/blog/category/{{c1}}"><span class="label label-primary">{{c1}}</span></a>{% endfor %}</li>
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div class="panel panel-default" id="category">
+        <div class="panel-heading">
+          <h4 class="panel-title">Categories</h4>
+        </div>
+        <ul class="list-group">
+          {% for c,count in c2 %}
+          <li class="list-group-item"><a href="/blog/category/{{c}}">{{c}}</a><span class="badge">{{count}}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="panel panel-default" id="archive">
+        <div class="panel-heading">
+          <h4 class="panel-title">Archive</h4>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="/blog/">2015</a><span class="badge">{{posts_count_all}}</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <form action="#">
+    </form>
+  <!-- ============================== siderbar ============================== -->
+</div><!-- row -->
+{% endblock %}
+
+{% block footer %}
+    <div class="container"><img id="footer-art" src="img/community.png" alt=""></div>
+    <div id="footer-grass" class="col-md-12"></div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">&copy; 2016 BEAR</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

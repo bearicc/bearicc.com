@@ -1,0 +1,23 @@
+2016-02-09 17:11:18,188 INFO Get /
+2016-02-09 11:12:49,905 INFO Get /
+2016-02-09 11:27:06,372 ERROR <class 'requests.exceptions.MissingSchema'>, util.py, 24
+2016-02-09 11:33:19,708 ERROR 
+Traceback (most recent call last):
+  File "util.py", line 25, in resolve_http_redirect
+    response = requests.head(url, timeout=4, allow_redirects=True)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 77, in head
+    return request('head', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhaps you meant http://123?
+2016-02-09 11:40:16,157 INFO Get /
+2016-02-09 11:46:30,510 INFO Get /
+2016-02-09 11:47:40,306 INFO Get /

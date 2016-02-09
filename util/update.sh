@@ -8,7 +8,7 @@ if [ -n "$(ls static|grep bootstrap-)" ]; then
 else
     BOOTSTRAP_OLD_VERSION=''
 fi
-BOOTSTRAP_NEW_VERSION=$(python3 -c 'from util import getBootstrapVesrion; print(getBootstrapVesrion())')
+BOOTSTRAP_NEW_VERSION=$(python3 -c 'from util import get_bootstrap_version; print(get_bootstrap_version())')
 echo Current: $BOOTSTRAP_OLD_VERSION
 if [[ $BOOTSTRAP_OLD_VERSION == $BOOTSTRAP_NEW_VERSION ]]; then
     echo Latest: $BOOTSTRAP_NEW_VERSION

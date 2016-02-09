@@ -1,10 +1,14 @@
-from __future__ import absolute_import
+import os
 import sys
 import logging
 
 import setting
+from setting import ROOT_DIR
+
 from flask import Flask, render_template, jsonify, request
 from celery import Celery
+
+from util import logger
 
 app = Flask(__name__)
 app.config.from_object(setting)
@@ -51,6 +55,7 @@ def show_result(task_id):
 
 @app.route('/')
 def home():
+    logger.info('Get /')
     return render_template('index.html')
 
 @app.route('/blog')

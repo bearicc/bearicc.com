@@ -8,7 +8,7 @@ from setting import ROOT_DIR
 from flask import Flask, render_template, jsonify, request
 from celery import Celery
 
-from util import logger
+from util import logger, get_tree, get_element_short_text
 
 app = Flask(__name__)
 app.config.from_object(setting)
@@ -69,6 +69,14 @@ def about():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
+@app.route('/test2')
+def test2():
+    url = 'http://getbootstrap.com/'
+    tree = get_tree(url)
+    e = tree.xpath('//div[@class="bs-docs-featurette"]/div[@class="container"]')[0]
+    short_text = get_element_short_text(e)
+    return short_text
 
 if __name__ == '__main__':
     from flask import send_from_directory

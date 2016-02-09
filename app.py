@@ -60,7 +60,11 @@ def home():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html')
+    return render_template('blog/index.html')
+
+@app.route('/blog/article')
+def blog_article():
+    return render_template('blog/article.html')
 
 @app.route('/about')
 def about():

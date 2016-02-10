@@ -84,7 +84,7 @@ footer .visitor-tracking div:nth-child(1n+2) {
 }
 .me {
     position: relative;
-    background-image: url("../img/me.png");
+    background-image: url("/img/me.png");
     background-size: contain;
     width: 100px;
     height: 100px;

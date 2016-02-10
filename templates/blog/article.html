@@ -9,11 +9,14 @@
 <div class="row">
     <!-- ============================== blog ============================== -->
     <div class="col-md-9" id="blog">
+        {% for i in data %}
         <article>
-            <h1>好好学习</h1>
-            <span>BEAR</span>
-            <p>?</p>
+            <h1>{{ i.title }}</h1>
+            <span>{{i.created}} by {{i.author}}</span>
+            <p>Hi</p>
+            <!-- {% include i.source_file %} -->
         </article>
+        {% endfor %}
     </div>
     <!-- ============================== siderbar ============================== -->
     <div class="col-md-3" id="aside">

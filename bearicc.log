@@ -30,3 +30,109 @@ requests.exceptions.MissingSchema: Invalid URL '123': No schema supplied. Perhap
 2016-02-09 13:20:26,314 INFO Get /
 2016-02-09 13:20:40,914 INFO Get /
 2016-02-09 13:26:35,547 INFO Get /
+2016-02-09 13:27:58,736 INFO Get /
+2016-02-09 13:28:23,527 INFO Get /
+2016-02-09 13:28:26,013 INFO Get /
+2016-02-09 13:29:57,351 INFO Get /
+2016-02-09 13:30:00,187 INFO Get /
+2016-02-09 13:32:59,373 INFO Get /
+2016-02-09 13:33:06,302 INFO Get /
+2016-02-09 13:40:17,543 INFO Get /
+2016-02-09 14:00:28,122 INFO Get /
+2016-02-09 14:14:57,868 INFO Get /
+2016-02-09 14:36:05,070 INFO Get /
+2016-02-09 14:44:53,446 INFO Get /
+2016-02-09 14:46:07,511 INFO Get /
+2016-02-09 14:59:13,010 INFO Get /
+2016-02-09 15:19:54,362 INFO Get /
+2016-02-09 15:20:07,977 INFO Get /
+2016-02-09 16:45:33,753 INFO Get /
+2016-02-09 16:46:47,640 INFO Get /
+2016-02-09 16:48:47,799 INFO Get /
+2016-02-09 17:16:53,121 INFO Get /
+2016-02-09 17:18:37,912 INFO Get /
+2016-02-09 17:18:50,051 INFO Get /
+2016-02-09 17:51:18,887 INFO Get /
+2016-02-09 18:25:18,800 INFO Get /
+2016-02-09 18:45:45,746 INFO Get /
+2016-02-09 18:46:58,264 INFO Get /
+2016-02-09 19:18:57,271 INFO Get /
+2016-02-09 19:19:09,885 INFO Get /
+2016-02-09 20:42:14,628 INFO Get /
+2016-02-09 20:43:21,250 INFO Get /
+2016-02-09 21:20:00,241 INFO Get /
+2016-02-09 21:21:17,635 INFO Get /
+2016-02-09 21:21:36,050 INFO Get /
+2016-02-09 21:51:16,311 INFO Get /
+2016-02-09 22:31:50,205 INFO Get /
+2016-02-09 22:45:56,279 INFO Get /
+2016-02-09 22:47:11,491 INFO Get /
+2016-02-09 23:21:36,429 INFO Get /
+2016-02-09 23:21:48,690 INFO Get /
+2016-02-10 00:19:04,620 INFO Get /
+2016-02-10 00:19:18,532 INFO Get /
+2016-02-10 01:19:43,672 INFO Get /
+2016-02-10 01:19:57,545 INFO Get /
+2016-02-10 02:43:50,283 INFO Get /
+2016-02-10 02:45:01,216 INFO Get /
+2016-02-10 02:51:11,586 INFO Get /
+2016-02-10 03:20:35,829 INFO Get /
+2016-02-10 03:20:51,640 INFO Get /
+2016-02-10 04:04:12,370 INFO Get /
+2016-02-10 04:33:35,552 INFO Get /
+2016-02-10 04:44:02,310 INFO Get /
+2016-02-10 04:45:14,930 INFO Get /
+2016-02-10 05:20:38,431 INFO Get /
+2016-02-10 05:20:54,786 INFO Get /
+2016-02-10 05:53:31,161 INFO Get /
+2016-02-10 06:47:01,933 INFO Get /
+2016-02-10 06:48:23,255 INFO Get /
+2016-02-10 07:17:50,714 INFO Get /
+2016-02-10 07:18:01,083 INFO Get /
+2016-02-10 08:43:14,989 INFO Get /
+2016-02-10 08:44:26,127 INFO Get /
+2016-02-10 09:46:06,957 INFO Get /
+2016-02-10 09:47:22,370 INFO Get /
+2016-02-10 10:26:24,453 INFO Get /
+2016-02-10 10:46:26,955 INFO Get /
+2016-02-10 10:47:42,148 INFO Get /
+2016-02-10 10:49:18,814 INFO Get /
+2016-02-10 11:20:47,007 INFO Get /
+2016-02-10 11:20:59,857 INFO Get /
+2016-02-10 11:49:41,345 INFO Get /
+2016-02-10 11:50:00,020 INFO Get /
+2016-02-10 11:59:02,943 INFO {'source_file': 'blog/web_scraping_in_python.html'}
+2016-02-10 12:00:46,869 INFO {'source_file': 'blog/web_scraping_in_python.html'}
+2016-02-10 12:45:15,159 INFO Get /
+2016-02-10 12:46:29,100 INFO Get /
+2016-02-10 13:07:17,696 INFO Get /
+2016-02-10 13:10:37,547 INFO Get /
+2016-02-10 13:11:59,285 INFO blog_article
+2016-02-10 13:13:23,482 INFO blog_article
+2016-02-10 13:14:10,714 INFO blog_article
+2016-02-10 13:16:04,775 INFO blog_article
+2016-02-10 13:18:21,621 INFO blog_article
+2016-02-10 13:18:21,621 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:19:44,043 INFO Get /
+2016-02-10 13:19:56,977 INFO Get /
+2016-02-10 13:20:20,390 INFO blog_article
+2016-02-10 13:20:20,391 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:23:47,966 INFO blog_article
+2016-02-10 13:23:47,966 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:23:47,967 INFO {'source_file': 'blog/web_scraping_in_python.html'}
+2016-02-10 13:26:04,630 INFO blog_article
+2016-02-10 13:26:04,630 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:26:04,631 INFO {'author': 'BEAR', 'id': 1, 'title': 'Web Scraping in Python', 'created': datetime.datetime(2016, 2, 10, 12, 36, 2), 'source_file': 'blog/web_scraping_in_python.html', 'updated': datetime.datetime(2016, 2, 10, 12, 36, 2), 'content': None}
+2016-02-10 13:26:53,798 INFO blog_article
+2016-02-10 13:26:53,798 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:26:53,799 INFO {'author': 'BEAR', 'id': 1, 'title': 'Web Scraping in Python', 'created': datetime.datetime(2016, 2, 10, 12, 36, 2), 'source_file': 'blog/web_scraping_in_python.html', 'updated': datetime.datetime(2016, 2, 10, 12, 36, 2), 'content': None}
+2016-02-10 13:27:07,711 INFO blog_article
+2016-02-10 13:27:07,711 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:27:07,712 INFO {'author': 'BEAR', 'id': 1, 'title': 'Web Scraping in Python', 'created': datetime.datetime(2016, 2, 10, 12, 36, 2), 'source_file': 'blog/web_scraping_in_python.html', 'updated': datetime.datetime(2016, 2, 10, 12, 36, 2), 'content': None}
+2016-02-10 13:32:04,851 INFO blog_article
+2016-02-10 13:32:04,851 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:33:00,019 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:34:51,941 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:35:23,953 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python
+2016-02-10 13:35:26,197 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python1
+2016-02-10 13:35:31,103 INFO SELECT * FROM blog WHERE created >= 2016-02-10 00:00:00 and created < 2016-02-11 00:00:00 and title = web scraping in python

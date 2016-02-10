@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+import datetime
 
 import setting
 from setting import ROOT_DIR
@@ -9,6 +10,7 @@ from flask import Flask, render_template, jsonify, request
 from celery import Celery
 
 from util import logger, get_tree, get_element_short_text
+from util import g_cursor as db
 
 app = Flask(__name__)
 app.config.from_object(setting)
@@ -55,16 +57,32 @@ def show_result(task_id):
 
 @app.route('/')
 def home():
-    logger.info('Get /')
     return render_template('index.html')
 
 @app.route('/blog')
 def blog():
     return render_template('blog/index.html')
 
-@app.route('/blog/article')
-def blog_article():
-    return render_template('blog/article.html')
+@app.route('/blog/<int:year>/<int:month>/<int:day>/<title>')
+def blog_article(year, month, day, title):
+    created = datetime.datetime(year, month, day)
+    para = {
+        'created': created,
+        'created_next_day': created+datetime.timedelta(days=1),
+        'title': title
+    }
+    logger.info('SELECT * FROM blog WHERE created >= %(created)s and created < %(created_next_day)s and title = %(title)s' % para)
+    db.execute('SELECT * FROM blog WHERE created >= %(created)s and created < %(created_next_day)s and title = %(title)s', para)
+    r = db.fetchall()
+    for i in r:
+        i['source_file'] = os.path.join('blog', i['source_file']+'.html')
+    if r:
+        para = {
+            'data': r
+        }
+        return render_template('blog/article.html', **para)
+    else:
+        return render_template('404.html'), 404
 
 @app.route('/about')
 def about():

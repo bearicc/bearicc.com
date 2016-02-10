@@ -47,12 +47,6 @@ article p {
 article span.date {
   margin-left: 1ex;
 }
-#blog {
-  padding-right: 30px;
-}
-#aside {
-  padding-left: 30px;
-}
 #aside > .panel {
   box-shadow: -8px 0 15px -8px rgba(0,0,0,.5);
   border: 1px solid #ddd;
@@ -198,4 +192,13 @@ span.label {
 .alert h1 {
   font-size: 1.5em;
   margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    #blog {
+      padding-right: 30px;
+    }
+    #aside {
+      padding-left: 30px;
+    }
 }
